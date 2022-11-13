@@ -5,7 +5,7 @@ Autor: Liujunjie/Aries-441
 StudentNumber: 521021911059
 Date: 2022-11-10 19:20:24
 E-mail: sjtu.liu.jj@gmail.com/sjtu.1518228705@sjtu.edu.cn
-LastEditTime: 2022-11-11 23:24:49
+LastEditTime: 2022-11-11 23:26:08
 '''
 
 #!/usr/bin/env python
@@ -182,9 +182,6 @@ class Keyboard(Node):
 def main(args=None):                                 # ROS2节点主入口main函数
     rclpy.init(args=args)                            # ROS2 Python接口初始化
     node = Keyboard("tribot")        # 创建ROS2节点对象并进行初始化
-    while rclpy.ok():                            # ROS2系统是否正常运行
-        node.get_logger().info("Hello World")    # ROS2日志输出
-        time.sleep(0.5)                          # 休眠控制循环时间  
     rclpy.spin(node)                                 # 循环等待ROS2退出
     node.destroy_node()                              # 销毁节点对象
     rclpy.shutdown()                                 # 关闭ROS2 Python接口

@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/base_link.STL" />
+          filename="package://tribot/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/base_link.STL" />
+          filename="package://tribot/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -67,7 +67,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel1_link.STL" />
+          filename="package://tribot/meshes/wheel1_link.STL" />
       </geometry>
       <material
         name="">
@@ -81,7 +81,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel1_link.STL" />
+          filename="package://tribot/meshes/wheel1_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -121,7 +121,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel2_link.STL" />
+          filename="package://tribot/meshes/wheel2_link.STL" />
       </geometry>
       <material
         name="">
@@ -135,7 +135,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel2_link.STL" />
+          filename="package://tribot/meshes/wheel2_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -175,7 +175,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel3_link.STL" />
+          filename="package://tribot/meshes/wheel3_link.STL" />
       </geometry>
       <material
         name="">
@@ -189,7 +189,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/wheel3_link.STL" />
+          filename="package://tribot/meshes/wheel3_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -229,7 +229,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/lidar_link.STL" />
+          filename="package://tribot/meshes/lidar_link.STL" />
       </geometry>
       <material
         name="">
@@ -243,7 +243,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/lidar_link.STL" />
+          filename="package://tribot/meshes/lidar_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -283,7 +283,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/camera_link.STL" />
+          filename="package://tribot/meshes/camera_link.STL" />
       </geometry>
       <material
         name="">
@@ -297,7 +297,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://tribot_description/meshes/camera_link.STL" />
+          filename="package://tribot/meshes/camera_link.STL" />
       </geometry>
     </collision>
   </link>

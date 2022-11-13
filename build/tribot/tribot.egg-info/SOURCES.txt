@@ -8,9 +8,12 @@ setup.py
 ../../build/tribot/tribot.egg-info/requires.txt
 ../../build/tribot/tribot.egg-info/top_level.txt
 ../../build/tribot/tribot.egg-info/zip-safe
+config/joint_names_tribot_description.yaml
 launch/set_kinematic.launch
+launch/tribot.launch.py
 launch/tribot_teleop.launch
 launch/view_tribot_gazebo_world.launch
+launch/view_tribot_world.launch.py
 meshes/base_link.STL
 meshes/camera_link.STL
 meshes/lidar_link.STL

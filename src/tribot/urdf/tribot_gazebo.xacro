@@ -3,10 +3,10 @@
 
     <xacro:property name="M_PI" value="3.1415926"/>
 
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_base.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_base.xacro" />
     <xacro:tribot_base/>
 
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_wheel.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_wheel.xacro" />
       <link
         name="wheel1_link">
         <inertial>
@@ -29,7 +29,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel1_link.STL" />
+              filename="package://tribot/meshes/wheel1_link.STL" />
           </geometry>
           <material
             name="">
@@ -43,7 +43,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel1_link.STL" />
+              filename="package://tribot/meshes/wheel1_link.STL" />
           </geometry>
         </collision>
       </link>
@@ -62,7 +62,7 @@
       </joint>
     <xacro:tribot_wheel prefix="wheel1"/>
 
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_wheel.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_wheel.xacro" />
       <link
         name="wheel2_link">
         <inertial>
@@ -85,7 +85,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel2_link.STL" />
+              filename="package://tribot/meshes/wheel2_link.STL" />
           </geometry>
           <material
             name="">
@@ -99,7 +99,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel2_link.STL" />
+              filename="package://tribot/meshes/wheel2_link.STL" />
           </geometry>
         </collision>
       </link>
@@ -118,7 +118,7 @@
       </joint>
     <xacro:tribot_wheel prefix="wheel2"/>
 
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_wheel.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_wheel.xacro" />
       <link
         name="wheel3_link">
         <inertial>
@@ -141,7 +141,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel3_link.STL" />
+              filename="package://tribot/meshes/wheel3_link.STL" />
           </geometry>
           <material
             name="">
@@ -155,7 +155,7 @@
             rpy="0 0 0" />
           <geometry>
             <mesh
-              filename="package://tribot_description/meshes/wheel3_link.STL" />
+              filename="package://tribot/meshes/wheel3_link.STL" />
           </geometry>
         </collision>
       </link>
@@ -174,7 +174,7 @@
       </joint>
     <xacro:tribot_wheel prefix="wheel3"/>
     
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_lidar.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_lidar.xacro" />
       <joint
         name="lidar_joint"
         type="fixed">
@@ -190,7 +190,7 @@
       </joint>
     <xacro:tribot_lidar/>
 
-    <xacro:include filename="$(find tribot_description)/urdf/tribot_camera.xacro" />
+    <xacro:include filename="$(find tribot)/urdf/tribot_camera.xacro" />
       <joint
         name="camera_joint"
         type="fixed">
