@@ -1,0 +1,98 @@
+[0.081s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.081s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='sequential', install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0844a02f10>>, merge_install=False, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0844a02f10>, verb_name='build', verb_parser=CustomArgumentParser(prog='colcon build', usage=None, description='Build a set of packages.', formatter_class=<class 'colcon_core.command.CustomFormatter'>, conflict_handler='error', add_help=True))
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.128s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ljj/projects'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(note) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribot) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribot) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribot) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribot) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/tribot) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tribot' with type 'ros.ament_python' and name 'tribot'
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'tribot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'tribot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ljj/projects/build/tribot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ljj/projects/install/tribot', 'merge_install': False, 'path': '/home/ljj/projects/src/tribot', 'symlink_install': False, 'test_result_base': None}
+[0.182s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[0.185s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'tribot'
+[0.185s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ljj/projects/src/tribot' with build type 'ament_python'
+[0.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribot', 'ament_prefix_path')
+[0.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ljj/projects/install/tribot/share/tribot/hook/ament_prefix_path.dsv'
+[0.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ljj/projects/install/tribot/share/tribot/hook/ament_prefix_path.sh'
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.491s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ljj/projects/src/tribot'
+[0.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ljj/projects/src/tribot': PYTHONPATH=/home/ljj/projects/install/tribot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tribot build --build-base /home/ljj/projects/build/tribot/build install --prefix /home/ljj/projects/install/tribot --record /home/ljj/projects/build/tribot/install.log --single-version-externally-managed
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ljj/projects/src/tribot' returned '0': PYTHONPATH=/home/ljj/projects/install/tribot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tribot build --build-base /home/ljj/projects/build/tribot/build install --prefix /home/ljj/projects/install/tribot --record /home/ljj/projects/build/tribot/install.log --single-version-externally-managed
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot' for CMake module files
+[1.536s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot' for CMake config files
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot/lib'
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot/bin'
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot/lib/pkgconfig/tribot.pc'
+[1.538s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot/lib/python3.8/site-packages'
+[1.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('tribot', 'pythonpath')
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ljj/projects/install/tribot/share/tribot/hook/pythonpath.dsv'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ljj/projects/install/tribot/share/tribot/hook/pythonpath.sh'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/ljj/projects/install/tribot/bin'
+[1.540s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tribot)
+[1.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ljj/projects/install/tribot/share/tribot/package.dsv'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/ljj/projects/install/tribot/share/tribot/package.sh'
+[1.546s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ljj/projects/install/tribot/share/colcon-core/packages/tribot)
+[1.547s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'tribot' finished with '0'
+[1.547s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[1.548s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[1.548s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.549s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.550s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ljj/projects/install/local_setup.sh'
+[1.551s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ljj/projects/install/_local_setup_util_sh.py'
+[1.554s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ljj/projects/install/setup.sh'

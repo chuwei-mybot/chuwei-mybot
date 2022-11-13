@@ -1,0 +1,4 @@
+[console_scripts]
+kinematic = tribot.kinematic:main
+tribot_teleop = tribot.tribot_teleop:main
+
