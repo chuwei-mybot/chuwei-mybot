@@ -5,7 +5,7 @@ Autor: Liujunjie/Aries-441
 StudentNumber: 521021911059
 Date: 2022-11-10 19:20:01
 E-mail: sjtu.liu.jj@gmail.com/sjtu.1518228705@sjtu.edu.cn
-LastEditTime: 2022-11-13 11:48:03
+LastEditTime: 2022-11-14 19:23:51
 '''
 
 #!/usr/bin/env python
@@ -49,10 +49,10 @@ class Set_Model_State(Node):
         self.tf2_broadcaster = StaticTransformBroadcaster(self)
         self.control_rate=10        # need to be adjusted further according to dt
         # publish the new position of levitator to gazebo
-        self.state_pub = self.create_publisher('gazebo/set_model_state', ModelState, 10)
+        self.state_pub = self.create_publisher( ModelState,'/set_model_state', 10)
         # subscribe control input
-        Node.create_subscription (Twist,'/cmd_vel', self.MotionCallback)
-        Node.create_subscription("gazebo/set_model_state", ModelState, self.broadcast_odom_tf)
+        self.create_subscription (Twist,'/cmd_vel', self.MotionCallback,10)
+        self.create_subscription(ModelState,'/set_model_state',  self.broadcast_odom_tf,10)
     
     def broadcast_odom_tf(self,model_state):
         parent_frame = 'odom'

@@ -10,8 +10,10 @@ setup.py
 ../../build/tribot/tribot.egg-info/zip-safe
 config/joint_names_tribot_description.yaml
 launch/set_kinematic.launch
+launch/set_kinematic.launch.py
 launch/tribot.launch.py
 launch/tribot_teleop.launch
+launch/tribot_teleop.launch.py
 launch/view_tribot_gazebo_world.launch
 launch/view_tribot_world.launch.py
 meshes/base_link.STL
@@ -28,6 +30,7 @@ test/test_pep257.py
 tribot/__init__.py
 tribot/kinematic.py
 tribot/node_helloworld.py
+tribot/teleop.py
 tribot/tribot_teleop.py
 urdf/tribot_base.xacro
 urdf/tribot_camera.xacro
