@@ -156,7 +156,7 @@ class teleop_keyboard(Node):
             twist.linear.x = 0.0; twist.linear.y = 0.0; twist.linear.z = 0.0
             twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = 0.0
             self.pub.publish(twist)
-            time.sleep(0.05)
+            #time.sleep(0.05)
 
 def main(args=None):  
     rclpy.init(args=args)

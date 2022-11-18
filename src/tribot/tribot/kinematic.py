@@ -5,7 +5,7 @@ Autor: Liujunjie/Aries-441
 StudentNumber: 521021911059
 Date: 2022-11-10 19:20:01
 E-mail: sjtu.liu.jj@gmail.com/sjtu.1518228705@sjtu.edu.cn
-LastEditTime: 2022-11-14 19:23:51
+LastEditTime: 2022-11-18 13:03:00
 '''
 
 #!/usr/bin/env python
@@ -69,7 +69,7 @@ class Set_Model_State(Node):
     def MotionCallback(self,cmd_vel):
         state_t = ModelState()
         state_t.model_name = "tribot"
-        self.current_time = rclpy.get_time()
+        self.current_time = rclpy.time.Time()
         self.dt = self.current_time - self.last_t
         
         if (self.last_t==0):
