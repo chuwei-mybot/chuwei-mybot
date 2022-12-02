@@ -1,36 +1,35 @@
-'''
-FileName: 
-Description: 
-Autor: Liujunjie/Aries-441
-StudentNumber: 521021911059
-Date: 2022-11-14 20:22:53
-E-mail: sjtu.liu.jj@gmail.com/sjtu.1518228705@sjtu.edu.cn
-LastEditTime: 2022-11-14 20:55:16
-'''
-#!/usr/bin/env python3 
-# -*- coding: utf-8 -*-
 import rclpy
 import os
 
-from ament_index_python.packages import get_package_share_directory
+#from ament_index_python.packages import get_package_share_directory
 import launch
 from launch import LaunchDescription
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, TextSubstitution
 from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
-
+from ament_index_python.packages import get_package_share_directory
 import xacro
 
 
 def generate_launch_description():
-    #params = {'scale_linear',0.1 ,'scale_angular',0.4}
-    kinematic = Node(package='tribot', executable='tribot_teleop',
-                        output='screen')
+    scale_linear_launch_arg = DeclareLaunchArgument(
+      'scale_linear', default_value=TextSubstitution(text='0.1')     # 创建一个Launch文件内参数（arg）background_r
+   )
+    scale_angular_launch_arg = DeclareLaunchArgument(
+      'scale_angular', default_value=TextSubstitution(text='0.4')     # 创建一个Launch文件内参数（arg）background_r
+   )
+    
     # Launch!
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'use_sim_time',
-            default_value='false',
-            description='Use sim time if true'),
-        kinematic
-    ])
+      scale_linear_launch_arg,
+      scale_angular_launch_arg,
+      Node(
+         package='tribot',
+         executable='tribot_teleop',
+         output='screen',
+         parameters=[{
+          'scale_linear': LaunchConfiguration('scale_linear'),   # 创建参数background_r
+          'scale_angular': LaunchConfiguration('scale_angular')
+            }]
+      ),
+   ])
